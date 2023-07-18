@@ -3,75 +3,154 @@
 <head>
 <link rel="icon" href="https://fiorenzofdt.com/wp-content/uploads/fiorenzo-digital-teamwear.jpg">
 <style>
-
+/* Stili comuni per tutti i dispositivi */
 body {
-            background-color: rgb(0, 0, 0);
-            color: rgb(255, 255, 255);
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            display: flex;
-            justify-content: center;
-            height: 70vh;
-            align-items: center;
-            margin: 0;
-        }
-        #container {
-            text-align: center;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            padding: 20px;
-            margin-top: 220px;
-            background-color: #202020;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        input[type="number"] {
-            background-color: rgb(255, 255, 255);
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(0, 0, 0);
-            border: none;
-            float: right;
-            padding: 8px 16px;
-            border-radius: 3px;
-            font-size: 16px;
-            text-align: center;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        input[type="number"]::placeholder {
-            color: white;
-        }
-        input[type="number"] {
-            width: 230px;
-            margin-right: 10px;
-        }
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 70vh;
+    align-items: center;
+    margin: 0;
+}
 
-        p {
-            font-size: large;
-        }
+#container {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 20px;
+    margin-top: 220px;
+    background-color: #202020;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    background-color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(0, 0, 0);
+    border: none;
+    float: right;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="number"]::placeholder {
+    color: white;
+}
+
+input[type="number"] {
+    width: 230px;
+    margin-right: 10px;
+}
+
+p {
+    font-size: large;
+}
+
+button {
+    background-color: red;
+    float: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #990000;
+}
+
+.scuro {
+    background-color: #111111;
+}
+
+#richiediPreventivoButton {
+    background-color: rgb(198, 198, 198);
+}
+
+/* Adattamenti per iPad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        margin-top: 150px;
+    }
+    #container {
+        margin-top: 180px;
+    }
+    input[type="number"] {
+        width: 120px;
+        margin-right: 5px;
+    }
+}
+
+/* Adattamenti per iPhone */
+@media only screen 
+  and (max-device-width: 480px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    #container {
+        margin-top: 100px;
+        padding: 40px;
+    }
+    input[type="number"] {
+        width: 300px;
+        height: auto;
+        margin-right: 10px;
+        padding: 6px 10px;
+        font-size: 25px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 25px;
+    }
+
+    label {
+        font-size: 30px;
+    }
+    button {
+        padding: 12px 20px;
+        font-size: 25px;
+    }
+}
 
 
-        button {
-            background-color: red;
-            float: center;
-            font-family:Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(255, 255, 255);
-            border: none;
-            padding: 8px 16px;
-            border-radius: 3px;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
+/* Adattamenti per laptop e PC */
+@media only screen 
+  and (min-width: 1025px) {
+    #container {
+        margin-top: 220px;
+    }
+    input[type="number"] {
+        width: 230px;
+        margin-right: 10px;
+    }
+}
 
-        button:hover {
-            background-color: #990000;
-        }
-        .scuro {
-            background-color: #111111;
-        }
+/* Adattamenti per Mac grande */
+@media only screen 
+  and (min-width: 1440px) {
 
-        #richiediPreventivoButton {
-            background-color: rgb(198, 198, 198);
-        }
+    #container {
+        margin-top: 220px;
+    }
+    input[type="number"] {
+        width: 250px;
+        margin-right: 10px;
+    }
+}
+
 
 </style>
   <title>Preventivatore DTF</title>
