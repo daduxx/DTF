@@ -160,6 +160,9 @@ button:hover {
 </style>
   <title>Preventivatore DTF</title>
   <script>
+
+    console.log("v18.07.1530");
+
     function calcolaMetriDTF() {
       var larghezzaDTF = parseInt(document.getElementById("larghezzaDTF").value);
       var altezzaDTF = parseInt(document.getElementById("altezzaDTF").value);
@@ -195,8 +198,8 @@ button:hover {
 
 
       // Aggiornamento dei risultati
-      document.getElementById("lunghezzaStampa").innerHTML = totaleAlt + " metri";
-      document.getElementById("prezzoTotale").innerHTML = prezzoTotaleMax + "€";
+      document.getElementById("lunghezzaStampa").innerHTML = totaleAlt.toFixed(2) + " metri";
+      document.getElementById("prezzoTotale").innerHTML = prezzoTotaleMax.toFixed(2) + "€";
     }
 
     function inviaRichiestaPreventivo() {
