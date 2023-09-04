@@ -158,7 +158,7 @@ button:hover {
   <title>Preventivatore DTF</title>
   <script>
 
-    console.log("v18.07.1530");
+    console.log("v4.09.1550");
 
     function calcolaMetriDTF() {
       var larghezzaDTF = parseInt(document.getElementById("larghezzaDTF").value);
@@ -171,13 +171,13 @@ button:hover {
       var quantitaImmagini = parseInt(document.getElementById("quantitaImmagini").value);
 
 
-      var loghiInUnaAlt = Math.floor(58 / larghezzaDTF);
+      var loghiInUnaAlt = Math.floor(57 / larghezzaDTF);
 
       // Seconda variabile per trovare la soluzione più economica
-      var loghiInUnaAlt2 = Math.floor(58 / larghezzaDTF2);
+      var loghiInUnaAlt2 = Math.floor(57 / larghezzaDTF2);
 
-      var totaleAlt1 = ((Math.ceil(quantitaImmagini/loghiInUnaAlt))*altezzaDTF + (((Math.ceil(quantitaImmagini/loghiInUnaAlt))-1)*0.5))/100;
-      var totaleAlt2 = ((Math.ceil(quantitaImmagini/loghiInUnaAlt2))*altezzaDTF2 + (((Math.ceil(quantitaImmagini/loghiInUnaAlt2))-1)*0.5))/100;
+      var totaleAlt1 = ((Math.ceil(quantitaImmagini/loghiInUnaAlt))*altezzaDTF + (((Math.ceil(quantitaImmagini/loghiInUnaAlt))-1)*1))/100;
+      var totaleAlt2 = ((Math.ceil(quantitaImmagini/loghiInUnaAlt2))*altezzaDTF2 + (((Math.ceil(quantitaImmagini/loghiInUnaAlt2))-1)*1))/100;
 
       if (totaleAlt2 < totaleAlt1) {
         totaleAlt = totaleAlt2;
